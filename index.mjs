@@ -14,7 +14,7 @@ const puerto = 3000;
 
 const app = express();
 
-app.get('/', async (req, res) => {
+app.get('/test', async (req, res) => {
   const resultado = await pool.query('SELECT * FROM test');
   res.send(resultado.rows);
 })

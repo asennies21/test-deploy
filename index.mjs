@@ -1,4 +1,4 @@
-import epxress from 'express'
+import express from 'express'
 
 const puerto = 3000;
 

@@ -18,6 +18,8 @@ app.get('/', async (req, res) => {
   const resultado = await pool.query('SELECT * FROM test');
   res.send(resultado.rows);
 })
+app.use(express.static('./front'))
+
 app.listen(puerto, () => {
   console.log(`Servidor escuchando en el puerto ${puerto}`);
 });
